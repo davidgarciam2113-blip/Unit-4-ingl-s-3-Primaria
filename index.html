@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Going to + verb (Tablet)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>Going to + verb</h1>
+    <div class="pill">Tablet-friendly · Instant feedback</div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Explanation</h2>
+      <p class="mono">S + am / is / are + going to + VERB + to + VERB + …</p>
+      <p><strong>I am going to the school to study English</strong><br/>Voy al colegio a estudiar inglés</p>
+    </section>
+
+    <!-- 1. Match -->
+    <section class="card" id="ex1">
+      <h2>1. Match the place with the correct action</h2>
+      <p class="hint">Drag each place to the correct sentence. (Touch and drag on tablet)</p>
+
+      <div class="grid-2">
+        <div>
+          <h3>Sentences</h3>
+          <div class="drop-list" id="matchDrops"></div>
+        </div>
+
+        <div>
+          <h3>Places (drag)</h3>
+          <div class="chips" id="matchChips"></div>
+        </div>
+      </div>
+
+      <div class="row">
+        <button class="btn" id="checkMatch">Check</button>
+        <button class="btn ghost" id="resetMatch">Reset</button>
+        <div class="score" id="matchScore"></div>
+      </div>
+    </section>
+
+    <!-- 2. Dropdown -->
+    <section class="card" id="ex2">
+      <h2>2. Complete with am / is / are going to</h2>
+      <p class="hint">Tap the dropdowns. Then tap Check.</p>
+
+      <div class="qa" id="goingToQA"></div>
+
+      <div class="row">
+        <button class="btn" id="checkQA">Check</button>
+        <button class="btn ghost" id="resetQA">Reset</button>
+        <div class="score" id="qaScore"></div>
+      </div>
+    </section>
+
+    <!-- 3. Drag verbs -->
+    <section class="card" id="ex3">
+      <h2>3. Complete with to + verb</h2>
+      <p class="hint">Drag the verb into the blank.</p>
+
+      <div class="verbs-box" id="verbBank"></div>
+      <div class="drop-list" id="verbDrops"></div>
+
+      <div class="row">
+        <button class="btn" id="checkVerbs">Check</button>
+        <button class="btn ghost" id="resetVerbs">Reset</button>
+        <div class="score" id="verbsScore"></div>
+      </div>
+    </section>
+
+    <!-- 4. Multiple choice -->
+    <section class="card" id="ex4">
+      <h2>4. Choose the correct answer</h2>
+      <p class="hint">Tap an option. You’ll see ✅/❌ immediately.</p>
+
+      <div class="mcq" id="mcq"></div>
+    </section>
+
+    <!-- 6. True/False -->
+    <section class="card" id="ex6">
+      <h2>6. True or False</h2>
+      <p class="hint">Tap True/False. Feedback is immediate.</p>
+
+      <div class="tf" id="tf"></div>
+    </section>
+
+    <!-- 7. Put in order (simple tap-to-build) -->
+    <section class="card" id="ex7">
+      <h2>7. Put the words in order</h2>
+      <p class="hint">Tap words to build the sentence. Tap a word in the answer to remove it.</p>
+
+      <div class="order" id="order"></div>
+    </section>
+
+    <footer class="footer">
+      <small>Made for tablets · Upload to GitHub · Publish with GitHub Pages</small>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
